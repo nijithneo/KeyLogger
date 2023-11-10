@@ -1,30 +1,36 @@
-# Keylogger Discord Webhook
+# Keylogger with Screenshot Capture for Discord
 
-This script captures keystrokes and sends them to a Discord channel using a webhook. It utilizes the `keyboard` and `requests` libraries to capture keystrokes and send HTTP requests to the Discord webhook URL.
+This Python script captures keystrokes and periodically takes screenshots, sending the data to Discord channels using webhooks. It utilizes the `pynput`, `requests`, and `PIL` (Pillow) libraries for keystroke capture, HTTP requests, and screenshot capture, respectively.
 
 ## Prerequisites
 
-Before running the script, make sure you have the following:
+Before running the script, ensure you have the following:
 
 - Python 3.x installed
-- `keyboard` library installed (`pip install keyboard`)
+- `pynput` library installed (`pip install pynput`)
 - `requests` library installed (`pip install requests`)
+- `PIL` (Pillow) library installed (`pip install pillow`)
 - A Discord account
-- A Discord webhook URL (Replace `'WEBHOOK_URL'` in the code with your actual Discord webhook URL)
+- Discord webhook URLs for keylogs and screenshots (Replace `'WEBHOOK_URL'` and `'WEBHOOK_URL_SCREENS'` in the code with your actual Discord webhook URLs)
 
 ## Usage
 
-1. Clone the repository or copy the code into a Python script file (e.g., `keylogger.py`).
-2. Open the script file in a text editor and replace `'WEBHOOK_URL'` with your actual Discord webhook URL.
+1. Clone the repository or copy the code into a Python script file (e.g., `keylogger_with_screens.py`).
+2. Open the script file in a text editor and replace `'WEBHOOK_URL'` and `'WEBHOOK_URL_SCREENS'` with your actual Discord webhook URLs.
 3. Save the changes.
 4. Open a terminal or command prompt and navigate to the directory where the script is located.
-5. Run the script using the command `python keylogger.py`.
-6. The script will start capturing keystrokes and sending them to the specified Discord channel via the webhook every 10 seconds.
-7. To stop the script, press `Ctrl + C` in the terminal or command prompt.
+5. Run the script using the command `python keylogger_with_screens.py`.
+6. The script will start capturing keystrokes and sending them to the specified Discord channel via the webhook every 10 seconds. Screenshots will be captured and sent every 60 seconds.
+
+## Features
+
+- Dynamic buffer size adjustment based on typing speed.
+- Capture and send screenshots at regular intervals.
+- Discord webhook integration for easy monitoring.
 
 ## Important Note
 
-Be cautious when using keyloggers, as they can potentially violate privacy and legal regulations. Make sure you have proper authorization and adhere to ethical guidelines when using or sharing code like this.
+Be cautious when using keyloggers, as they can potentially violate privacy and legal regulations. Ensure you have proper authorization and adhere to ethical guidelines when using or sharing code like this.
 
 ## Contributing
 
