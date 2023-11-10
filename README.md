@@ -19,7 +19,7 @@ Before running the script, ensure you have the following:
 2. Open the script file in a text editor and replace `'WEBHOOK_URL'` and `'WEBHOOK_URL_SCREENS'` with your actual Discord webhook URLs.
 3. Save the changes.
 4. Open a terminal or command prompt and navigate to the directory where the script is located.
-5. Run the script using the command `python keylogger_with_screens.py`.
+5. Run the script using the command `python Keylogger.py`.
 6. The script will start capturing keystrokes and sending them to the specified Discord channel via the webhook every 10 seconds. Screenshots will be captured and sent every 60 seconds.
 
 ## Features
