@@ -15,7 +15,7 @@ Before running the script, ensure you have the following:
 
 ## Usage
 
-1. Clone the repository or copy the code into a Python script file (e.g., `keylogger_with_screens.py`).
+1. Clone the repository or copy the code into a Python script file (e.g., `Keylogger.py`).
 2. Open the script file in a text editor and replace `'WEBHOOK_URL'` and `'WEBHOOK_URL_SCREENS'` with your actual Discord webhook URLs.
 3. Save the changes.
 4. Open a terminal or command prompt and navigate to the directory where the script is located.
